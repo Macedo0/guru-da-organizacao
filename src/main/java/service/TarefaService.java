@@ -10,11 +10,8 @@ public class TarefaService {
 	private TarefaDAO tarefaDAO = new TarefaDAO();
 	
 	public Object insert(Request request, Response response) {
-		String idTarefa = request.queryParams("idT");
-		Integer.parseInt(idTarefa);
-		
-		String idUsuario = request.queryParams("idU");
-		Integer.parseInt(idUsuario);
+		int idTarefa = Integer.parseInt(request.params(":idTarefa"));
+		int idUsuario = Integer.parseInt(request.params(":idTarefa"));
 		
 		String descricao = request.queryParams("descricao");
 		String categoria = request.queryParams("categoria");
@@ -22,7 +19,7 @@ public class TarefaService {
 		String dataFim = request.queryParams("dataFim");
 		String complete = request.queryParams("complete"); 
 		
-		Tarefa tarefa = new Tarefa(-1, 0, descricao, categoria, dataInicio, dataFim, complete);
+		Tarefa tarefa = new Tarefa(idTarefa, idUsuario, descricao, categoria, dataInicio, dataFim, complete);
 		
 		
 		if(tarefaDAO.insert(tarefa) == true) {
