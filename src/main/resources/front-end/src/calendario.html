@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendário</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="calendario.css">
 </head>
 
 <body>
-    <div class="bloco">
-        <header>
-            <ul class="header">
-                <li><a class="active" href="calendario.html">Calendário</a></li>
-                <li><a href="barra.html">Barra de Progresso</a></li>
-                <li><a href="lista.html">Lista de Tarefas</a></li>
-            </ul>
-        </header>
-    </div>
+    <nav>
+        <div class="logo">
+            <h4>Guru da Organização</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="barra.html">Barra de Progresso</a></li>
+            <li><a href="lista.html">Lista de Tarefas</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
     <div class="bloco1">
         <div id="container">
@@ -29,7 +36,7 @@
                     <button id="nextButton">Próximo</button>
                 </div>
             </div>
-    
+
             <div id="weekdays">
                 <div>Domingo</div>
                 <div>Segunda</div>
@@ -39,28 +46,28 @@
                 <div>Sexta</div>
                 <div>Sábado</div>
             </div>
-    
+
             <div id="calendar"></div>
         </div>
-    
+
         <div id="newEventModal">
             <h2>Novo Evento</h2>
-    
+
             <input id="eventTitleInput" placeholder="Título do Evento" />
-    
+
             <button id="saveButton">Salvar</button>
             <button id="cancelButton">Cancelar</button>
         </div>
-    
+
         <div id="deleteEventModal">
             <h2>Evento</h2>
-    
+
             <p id="eventText"></p>
-    
+
             <button id="deleteButton">Deletar</button>
             <button id="closeButton">Fechar</button>
         </div>
-    
+
         <div id="modalBackDrop"></div>
     </div>
 
