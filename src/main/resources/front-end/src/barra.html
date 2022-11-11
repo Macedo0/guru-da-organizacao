@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="'pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="barra.css" />
-    </head>
 
-  <body>
-    <div class="bloco">
-      <header>
-          <ul class="header">
-            <li><a href="calendario.html">Calendário</a></li>
-            <li><a class="active" href="barra.html">Barra de Progresso</a></li>
-            <li><a href="lista.html">Lista de Tarefas</a></li>
-          </ul>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="barra.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Guru da Organização</h4>
     </div>
-    <div class="container">
-      <input type="radio" class="radio" name="progress" value="five" id="five">
-      <label for="five" class="label">5%</label>
-    
-      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
-      <label for="twentyfive" class="label">25%</label>
-    
-      <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
-      <label for="fifty" class="label">50%</label>
-    
-      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
-      <label for="seventyfive" class="label">75%</label>
-    
-      <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
-      <label for="onehundred" class="label">100%</label>
-    
-      <div class="progress">
-        <div class="progress-bar"></div>
-      </div>
+    <ul class="nav-links">
+      <li><a href="calendario.html">Calendário</a></li>
+      <li><a href="barra.html">Barra de Progresso</a></li>
+      <li><a href="lista.html">Lista de Tarefas</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
-  </body>
+  </nav>
+
+  <div class="container">
+    <input type="radio" class="radio" name="progress" value="five" id="five">
+    <label for="five" class="label">5%</label>
+
+    <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
+    <label for="twentyfive" class="label">25%</label>
+
+    <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+    <label for="fifty" class="label">50%</label>
+
+    <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
+    <label for="seventyfive" class="label">75%</label>
+
+    <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+    <label for="onehundred" class="label">100%</label>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Mantenha-se organizado com o Guru!</h1>
+    <p>Estamos aqui para lhe ajudar a manter a ordem no<br> seu dia a dia.</p>
+  </div>
+
+  <div class="imagem">
+    <div class="foto">
+      <img src="foto.jpg">
+    </div>
+    <div class="content2">
+      <h1>Acompanhe seu progresso!</h1>
+      <p>Manter-se atualizado sobre seus afazeres<br>é mais importante do que você imagina!</p>
+    </div>
+  </div>
+
+  <script src="barra.js"></script>
+</body>
+
 </html>
